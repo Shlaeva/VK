@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E30E6A7D2469DC2E00F2F1BD /* AllFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E6A7C2469DC2E00F2F1BD /* AllFriendsController.swift */; };
+		E30E6A802469DC7F00F2F1BD /* AllFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E6A7F2469DC7F00F2F1BD /* AllFriendsCell.swift */; };
 		E38B158D246782010023D7D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B158C246782010023D7D1 /* AppDelegate.swift */; };
 		E38B158F246782010023D7D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B158E246782010023D7D1 /* SceneDelegate.swift */; };
 		E38B1591246782010023D7D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B1590246782010023D7D1 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E30E6A7C2469DC2E00F2F1BD /* AllFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsController.swift; sourceTree = "<group>"; };
+		E30E6A7F2469DC7F00F2F1BD /* AllFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsCell.swift; sourceTree = "<group>"; };
 		E38B1589246782010023D7D1 /* VKApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38B158C246782010023D7D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E38B158E246782010023D7D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E30E6A7E2469DC4000F2F1BD /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				E30E6A7C2469DC2E00F2F1BD /* AllFriendsController.swift */,
+				E30E6A7F2469DC7F00F2F1BD /* AllFriendsCell.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
 		E38B1580246782010023D7D1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +69,7 @@
 		E38B158B246782010023D7D1 /* VKApp */ = {
 			isa = PBXGroup;
 			children = (
+				E30E6A7E2469DC4000F2F1BD /* Friends */,
 				E38B158C246782010023D7D1 /* AppDelegate.swift */,
 				E38B158E246782010023D7D1 /* SceneDelegate.swift */,
 				E38B1590246782010023D7D1 /* ViewController.swift */,
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30E6A802469DC7F00F2F1BD /* AllFriendsCell.swift in Sources */,
 				E38B1591246782010023D7D1 /* ViewController.swift in Sources */,
+				E30E6A7D2469DC2E00F2F1BD /* AllFriendsController.swift in Sources */,
 				E38B158D246782010023D7D1 /* AppDelegate.swift in Sources */,
 				E38B158F246782010023D7D1 /* SceneDelegate.swift in Sources */,
 			);
