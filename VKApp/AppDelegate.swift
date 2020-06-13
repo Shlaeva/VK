@@ -5,10 +5,11 @@
 //  Created by Julie on 10.05.2020.
 //  Copyright © 2020 YuliaShlaeva. All rights reserved.
 //
-
 import UIKit
 
 @UIApplicationMain
+
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

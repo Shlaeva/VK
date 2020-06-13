@@ -10,13 +10,41 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var roll1: UIView!
+    @IBOutlet weak var roll2: UIView!
+    @IBOutlet weak var roll3: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        roll1.clipsToBounds = true
+        roll1.layer.cornerRadius = roll1.bounds.size.width/2
+        roll2.clipsToBounds = true
+        roll2.layer.cornerRadius = roll2.bounds.size.width/2
+        roll3.clipsToBounds = true
+        roll3.layer.cornerRadius = roll3.bounds.size.width/2
+        
+        
+        
+        UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .autoreverse], animations: {
+            self.roll1.alpha = 0.1
+        })
+        UIView.animate(withDuration: 2, delay: 1, options: [.repeat, .autoreverse], animations: {
+                self.roll2.alpha = 0.1
+        })
+        UIView.animate(withDuration: 2, delay: 2, options: [.repeat, .autoreverse], animations: {
+                    self.roll3.alpha = 0.1
+        })
+            
+            
+           
+        
     }
 
+
     
-   
+    
     @IBOutlet weak var loginIntput: UITextField!
     
     
@@ -52,11 +80,9 @@ class ViewController: UIViewController {
     }
         
     func showLoginError() {
-        let alert = UIAlertController(title: "Error", message: "Incorrect data of User", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        _ = UIAlertController(title: "Error", message: "Incorrect data of User", preferredStyle: .alert)
+        _ = UIAlertAction(title: "OK", style: .cancel, handler: nil)
     }
-    
-    
     
     
 
