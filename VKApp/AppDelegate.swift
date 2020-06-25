@@ -5,10 +5,13 @@
 //  Created by Julie on 10.05.2020.
 //  Copyright © 2020 YuliaShlaeva. All rights reserved.
 //
-
 import UIKit
+import WebKit
+import Alamofire
 
 @UIApplicationMain
+
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

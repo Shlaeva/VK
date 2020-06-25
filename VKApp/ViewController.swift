@@ -8,20 +8,49 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    
    
     @IBOutlet weak var loginIntput: UITextField!
-    
-    
     @IBOutlet weak var passwordInput: UITextField!
     
+    @IBOutlet weak var roll1: UIView!
+    @IBOutlet weak var roll2: UIView!
+    @IBOutlet weak var roll3: UIView!
+      
+      
+    override func viewDidLoad() {
+        super.viewDidLoad()
+      
+        let session = Session.instance
+            session.name = "admin"
+            session.password = "012345"
+            session.token = "sofjeriohvw89e574e"
+            session.userId = "0"
+          
+        loginIntput.text = session.name
+        passwordInput.text = session.password
+        
+          
+        roll1.clipsToBounds = true
+        roll1.layer.cornerRadius = roll1.bounds.size.width/2
+        roll2.clipsToBounds = true
+        roll2.layer.cornerRadius = roll2.bounds.size.width/2
+        roll3.clipsToBounds = true
+        roll3.layer.cornerRadius = roll3.bounds.size.width/2
+          
+        UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .autoreverse], animations: {
+            self.roll1.alpha = 0.1
+        })
+        UIView.animate(withDuration: 2, delay: 1, options: [.repeat, .autoreverse], animations: {
+            self.roll2.alpha = 0.1
+        })
+        UIView.animate(withDuration: 2, delay: 2, options: [.repeat, .autoreverse], animations: {
+            self.roll3.alpha = 0.1
+        })
+              
+      }
     
   @IBAction func SigninButtonPressed(_ sender: Any) {
       
@@ -52,13 +81,10 @@ class ViewController: UIViewController {
     }
         
     func showLoginError() {
-        let alert = UIAlertController(title: "Error", message: "Incorrect data of User", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        _ = UIAlertController(title: "Error", message: "Incorrect data of User", preferredStyle: .alert)
+        _ = UIAlertAction(title: "OK", style: .cancel, handler: nil)
     }
-    
-    
-    
-    
+
 
 }
 
